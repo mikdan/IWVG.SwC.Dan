@@ -38,6 +38,6 @@ private User user;
 
 	@Test
 	public void testInitials() {
-		assertEquals("A.L", user.initials());
+		assertEquals("A.", user.initials());
 	}
 }
