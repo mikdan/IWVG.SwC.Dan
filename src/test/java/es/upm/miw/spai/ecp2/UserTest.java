@@ -14,12 +14,17 @@ private User user;
 		user = new User(1, "Ana", "Lopez");
 	}
 	@Test
-	public void testGetNumber(){
+	public void testUser(){
 		assertEquals(1, user.getNumber());
         assertEquals("Ana", user.getName());
         assertEquals("Lopez", user.getFamilyName());
 		 
 	}	
+	
+	@Test
+	public void testGetNumber() {
+		assertEquals("Ana", user.getName());
+	}
 	
 	@Test
 	public void testGetName(){
