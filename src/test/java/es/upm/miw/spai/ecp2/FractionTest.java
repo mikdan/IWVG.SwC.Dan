@@ -32,6 +32,11 @@ public class FractionTest {
 	@Test
 	public void testDecimal() {
 		assertEquals((double)2/4, fraction.decimal(), 10e-3);
-	}   
+	}
+	
+	@Test
+    public void testIsPropia() {
+        assertEquals(true, fraction.isPropia());
+    }  
    
 }
