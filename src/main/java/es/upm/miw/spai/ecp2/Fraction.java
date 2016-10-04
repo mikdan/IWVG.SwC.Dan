@@ -68,4 +68,11 @@ public class Fraction {
         return numerator < denominator;
     }
     
+    public Fraction resta(Fraction fraction, Fraction fraction2)
+    {
+    	Fraction result= new Fraction();
+    	result.numerator=fraction.getNumerator()-fraction2.getNumerator();
+    	result.denominator=fraction.getDenominator();
+    	return result;
+    }
 }
