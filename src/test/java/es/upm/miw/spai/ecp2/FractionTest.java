@@ -39,5 +39,10 @@ public class FractionTest {
 	    assertTrue(fraction.isEquivalent(new Fraction(3,6)));
 	    assertFalse(fraction.isEquivalent(new Fraction(3,5)));
 	}
+	
+	@Test
+    public void testIsPropia() {
+        assertEquals(true, fraction.isPropia());
+    }  
    
 }
