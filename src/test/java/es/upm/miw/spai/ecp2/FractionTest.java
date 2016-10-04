@@ -8,10 +8,12 @@ import org.junit.Test;
 public class FractionTest {
 
 	private Fraction fraction;
+	private Fraction fraction2;
 
 	@Before
 	public void before(){
 		fraction = new Fraction(2,4);
+		fraction2 = new Fraction(1,4);
 	}
 	
 	@Test
@@ -39,5 +41,16 @@ public class FractionTest {
 	    assertTrue(fraction.isEquivalent(new Fraction(3,6)));
 	    assertFalse(fraction.isEquivalent(new Fraction(3,5)));
 	}
+	
+	@Test
+    public void testIsPropia() {
+        assertEquals(true, fraction.isPropia());
+    }  
    
+	@Test
+	public void testresta() {
+		Fraction resta=new Fraction();
+		resta.resta(fraction, fraction2);
+        assertEquals(1, resta.getNumerator());
+    }  
 }
